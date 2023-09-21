@@ -1,0 +1,141 @@
+/* Estilize o mini site de acordo com suas preferências */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('img/maximalfocus.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantém o fundo fixo durante o scroll */
+    font-family: Arial, sans-serif;
+    box-shadow: inset 0 800px 0px #000000b6;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    height: 700px;
+}
+
+.container-menu {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.profile {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.img-perfil img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.img-perfil img:hover {
+    transform: scale(1.1);
+}
+
+.profile h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: monospace, sans-serif;
+}
+
+.profile p {
+    font-size: 12px;
+    color: #cecece;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.link {
+    flex: 1;
+    margin: 0 5px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 2px 4px rgb(255, 255, 255);
+}
+
+.link1 {
+    background-image: url('img/btn-portifolio.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link2 {
+    background-image: url('img/btn-servicos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link3 {
+    background-image: url('img/btn-orcamento.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pulsar 2s infinite alternate-reverse ease-in-out;
+}
+
+.link4 {
+    background-image: url('img/btn-sobre-nos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.redes-sociais {
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+.redes-sociais a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    filter: drop-shadow(2px 4px 2px rgb(255, 255, 255));
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.3);
+}
+
+/*ANIMAÇÃO*/
+
+@keyframes pulsar {
+    0%{
+        transform: scale(1.0);
+        filter: drop-shadow(2px 4px 2px rgba(255, 255, 255, 0.151))
+    }
+    100%{
+        transform: scale(1.1);
+        filter: drop-shadow(2px 4px 2px rgb(255, 255, 255))
+    }
+}
